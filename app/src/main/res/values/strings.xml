@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Password Generator</string>
+    <string name="keyword">Keyword</string>
+    <string name="enter_a_keyword_to_generate_password">Enter a keyword to generate\npassword</string>
+    <string name="suggested_passwords">Suggested Passwords:</string>
+    <string name="find_password">Find Password</string>
 </resources>

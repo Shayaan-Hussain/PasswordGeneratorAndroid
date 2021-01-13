@@ -5,13 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 
-class SplashScreen : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
+    private val splashTimeOut : Long = 2500
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.splash_screen)
+        setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
         Handler().postDelayed({
-            intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainScreen::class.java)
             startActivity(intent)
-        }, 1500)
+        }, splashTimeOut)
     }
 }
